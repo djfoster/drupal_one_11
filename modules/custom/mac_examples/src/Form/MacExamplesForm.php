@@ -30,7 +30,7 @@ class MacExamplesForm extends FormBase {
     $form['area_de_texto_1'] = array(
       '#type' => 'textarea',
       '#title' => 'Introducir Comentario',
-      '#resizable' => 'none',
+      '#resizable' => 'none'
     );
     
     $form['checkbox_1'] = array(
