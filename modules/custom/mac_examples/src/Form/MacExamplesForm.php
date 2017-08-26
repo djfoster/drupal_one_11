@@ -23,7 +23,8 @@ class MacExamplesForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['caja_de_texto_1'] = array(
       '#type' => 'textfield',
-      '#title' => 'Caja de texto 1',
+      '#title' => 'Introducir Nombre',
+      '#require' => TRUE,
     );
     
     $form['area_de_texto_1'] = array(
