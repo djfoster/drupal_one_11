@@ -70,7 +70,7 @@ class MacExamplesForm extends FormBase {
       '#max' => '20',
     );
       
-    $form['edad'] = array(
+    $form['edad_1'] = array(
       '#type' => 'number',
       '#title' => 'Ingresa tu Edad',
       '#min' => '>0',
@@ -114,7 +114,7 @@ class MacExamplesForm extends FormBase {
     
     drupal_set_message('Numero elegido: ' . $form_state->getValue('numero_1'), 'status');
     
-    drupal_set_message('Edad: ' . $form_state->getValue('edad'), 'status'); 
+    drupal_set_message('Edad: ' . $form_state->getValue('edad_1'), 'status'); 
   }
   
 }
