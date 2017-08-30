@@ -58,7 +58,8 @@ class MacExamplesForm extends FormBase {
     
     $form['numero_1'] = array(
       '#type' => 'number',
-      '#title' => 'Ingresa un número',
+      '#title' => 'Fecha 1',
+      '#default_value' => '2017-08-31'
     );
     
     $form['actions']['#type'] = 'actions';
