@@ -43,11 +43,12 @@ class MacExamplesForm extends FormBase {
     $form['color_1'] = array(
       '#type' => 'color',
       '#title' => 'Elije un color',
-      'default_value' => '#ffffff'
+      '#default_value' => '#ffffff'
     );
     
     $form['fecha_1'] = array(
       '#type' => 'date',
+      '#default_value' => '2017-08-31',
       '#title' => 'Fecha 1',
     );
     
@@ -58,8 +59,9 @@ class MacExamplesForm extends FormBase {
     
     $form['numero_1'] = array(
       '#type' => 'number',
-      '#title' => 'Fecha 1',
-      '#default_value' => '2017-08-31'
+      '#title' => 'Ingresa un Numero',
+      '#min' => -20
+      '#max' => 20
     );
     
     
