@@ -43,6 +43,7 @@ class MacExamplesForm extends FormBase {
     $form['color_1'] = array(
       '#type' => 'color',
       '#title' => 'Elije un color',
+      'default_value' => '#ffffff'
     );
     
     $form['fecha_1'] = array(
