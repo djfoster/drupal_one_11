@@ -28,6 +28,12 @@ class MacExamplesForm extends FormBase {
       '#default_value' => 'Valor por defecto'
     );
     
+    $form['caja_de_texto_2'] = array(
+      '#type' => 'textfield',
+      '#title' => 'Ingresa tus apellidos',
+      '#required' => TRUE,
+     ); 
+    
     $form['area_de_texto_1'] = array(
       '#type' => 'textarea',
       '#title' => 'Introducir Comentario',
@@ -63,6 +69,12 @@ class MacExamplesForm extends FormBase {
       '#min' => '-20',
       '#max' => '20',
     );
+      
+    $form['edad'] = array(
+      '#type' => 'number',
+      '#title' => 'Ingresa tu Edad',
+      '#min' => '>0',
+    ); 
     
     
     $form['actions']['#type'] = 'actions';
@@ -86,19 +98,23 @@ class MacExamplesForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    drupal_set_message('Caja de texto 1: ' . $form_state->getValue('caja_de_texto_1'), 'status');
+    drupal_set_message('Nombre: ' . $form_state->getValue('caja_de_texto_1'), 'status');
     
-    drupal_set_message('Area de texto 1: ' . $form_state->getValue('area_de_texto_1'), 'status');
+    drupal_set-message('Apellidos: ' . $form_state->getValue('caja_de_texto_2') 'status');
     
-    drupal_set_message('Marca esta opción: ' . $form_state->getValue('checkbox_1'), 'status');
+    drupal_set_message('Comentario: ' . $form_state->getValue('area_de_texto_1'), 'status');
     
-    drupal_set_message('Elije un color: ' . $form_state->getValue('color_1'), 'status');
+    drupal_set_message('Opcion: ' . $form_state->getValue('checkbox_1'), 'status');
+    
+    drupal_set_message('Color: ' . $form_state->getValue('color_1'), 'status');
     
     drupal_set_message('Fecha 1: ' . $form_state->getValue('fecha_1'), 'status');
     
-    drupal_set_message('Ingresa correo electrónico: ' . $form_state->getValue('email_1'), 'status');
+    drupal_set_message('Correo electrónico: ' . $form_state->getValue('email_1'), 'status');
     
-    drupal_set_message('Ingresa un número: ' . $form_state->getValue('numero_1'), 'status');
+    drupal_set_message('Numero elegido: ' . $form_state->getValue('numero_1'), 'status');
+    
+    drupal_set_message('Edad: ' . $form_state->getValue('edad'), 'status'); 
   }
   
 }
