@@ -70,7 +70,12 @@ class MacExamplesForm extends FormBase {
       '#min' => '-20',
       '#max' => '20',
     );
-      
+    
+    $form['edad_1'] = array(
+      '#type' => 'number',
+      '#title' => 'Ingresa tu Edad',
+      '#min' => '>0',
+    );      
 
     $form['actions']['#type'] = 'actions';
     
