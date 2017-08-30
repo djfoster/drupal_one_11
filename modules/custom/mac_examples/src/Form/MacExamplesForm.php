@@ -27,6 +27,13 @@ class MacExamplesForm extends FormBase {
       '#required' => TRUE,
       '#default_value' => 'Valor por defecto'
     );
+    
+    $form['caja_de_texto_2'] = array(
+      '#type' => 'textfield',
+      '#title' => 'Ingresa tus apellidos',
+      '#required' => TRUE,
+     );
+
      
     $form['area_de_texto_1'] = array(
       '#type' => 'textarea',
