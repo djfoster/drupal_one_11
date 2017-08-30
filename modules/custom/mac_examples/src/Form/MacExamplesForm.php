@@ -95,8 +95,10 @@ class MacExamplesForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     drupal_set_message('Nombre: ' . $form_state->getValue('caja_de_texto_1'), 'status');
     
-    drupal_set_message('Comentario: ' . $form_state->getValue('area_de_texto_1'), 'status');
+    drupal_set_message('Apellidos: ' . $form_state->getValue('caja_de_texto_2') 'status');
     
+    drupal_set_message('Comentario: ' . $form_state->getValue('area_de_texto_1'), 'status');
+   
     drupal_set_message('Opcion: ' . $form_state->getValue('checkbox_1'), 'status');
     
     drupal_set_message('Color: ' . $form_state->getValue('color_1'), 'status');
